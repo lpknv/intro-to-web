@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9491d393-6f28-472c-b659-911304cd7b63" name="Changes" comment="Daten aus JSON-Datei auslesen">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9491d393-6f28-472c-b659-911304cd7b63" name="Changes" comment="entferne code">
+      <change beforePath="$PROJECT_DIR$/Zootopia/animals_web_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zootopia/animals_web_generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1765533101072</updated>
       <workItem from="1765533102092" duration="334000" />
-      <workItem from="1765551752420" duration="1988000" />
+      <workItem from="1765551752420" duration="2464000" />
     </task>
     <task id="LOCAL-00001" summary="Daten aus JSON-Datei auslesen">
       <option name="closed" value="true" />
@@ -84,7 +84,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765534664959</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="verbessere HTML der Karten-Elemente">
+      <option name="closed" value="true" />
+      <created>1765569272309</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765569272309</updated>
+    </task>
+    <task id="LOCAL-00003" summary="entferne code">
+      <option name="closed" value="true" />
+      <created>1765569364412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765569364412</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,9 +108,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Daten aus JSON-Datei auslesen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Daten aus JSON-Datei auslesen" />
+    <MESSAGE value="verbessere HTML der Karten-Elemente" />
+    <MESSAGE value="entferne code" />
+    <option name="LAST_COMMIT_MESSAGE" value="entferne code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Intro_To_Web$animals_web_generator.coverage" NAME="animals_web_generator Coverage Results" MODIFIED="1765535075549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zootopia" />
+    <SUITE FILE_PATH="coverage/Intro_To_Web$animals_web_generator.coverage" NAME="animals_web_generator Coverage Results" MODIFIED="1765569468560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zootopia" />
   </component>
 </project>
