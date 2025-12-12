@@ -7,11 +7,6 @@ def load_data(file_path):
         return json.load(handle)
 
 
-def load_html(file_path):
-    with open(file_path, "r") as handle:
-        return handle
-
-
 animals_data = load_data('animals_data.json')
 
 output = ""
