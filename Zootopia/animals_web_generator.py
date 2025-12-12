@@ -18,12 +18,14 @@ output = ""
 
 for animal in animals_data:
     output += f"""
-    <li class="cards__item">
-    Name: {animal['name']}<br/>
-    Diet: {animal['characteristics']['diet']}<br/>
-    Location: {", ".join(animal['locations'])}<br/>
-    {('Type: ' + animal['characteristics']['type']) if animal['characteristics'].get('type') else ''}
-    </li>
+            <li class="cards__item">
+                <div class="card__title">{animal['name']}</div>
+                <p class="card__text">
+                    <strong>Diet:</strong> {animal['characteristics']['diet']}<br/>
+                    <strong>Location:</strong> {", ".join(animal['locations'])}<br/>
+                    {('<strong>Type:</strong> ' + animal['characteristics']['type']) if animal['characteristics'].get('type') else ''}
+                </p>
+            </li>
     """
 
 with open("animals_template.html", "r", encoding="utf-8") as file:
