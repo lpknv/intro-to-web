@@ -11,11 +11,11 @@ def serialize_animal(animal_obj):
     output = ""
     output += f"""
                 <li class="cards__item">
-                    <div class="card__title">{animal['name']}</div>
+                    <div class="card__title">{animal_obj['name']}</div>
                     <p class="card__text">
-                        <strong>Diet:</strong> {animal['characteristics']['diet']}<br/>
-                        <strong>Location:</strong> {", ".join(animal['locations'])}<br/>
-                        {('<strong>Type:</strong> ' + animal['characteristics']['type']) if animal['characteristics'].get('type') else ''}
+                        <strong>Diet:</strong> {animal_obj['characteristics']['diet']}<br/>
+                        <strong>Location:</strong> {", ".join(animal_obj['locations'])}<br/>
+                        {('<strong>Type:</strong> ' + animal_obj['characteristics']['type']) if animal_obj['characteristics'].get('type') else ''}
                     </p>
                 </li>
         """
