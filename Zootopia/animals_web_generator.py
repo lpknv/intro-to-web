@@ -64,27 +64,32 @@ def output_animal_html_file(template_path, output_path, replacements):
 
 
 def main():
+    # get animals data from json file
     animals = get_animals_data()
 
+    # show available skin types from all animals (without duplicates)
     show_skin_types(animals)
 
+    # read the skin type from user input and transform it to lower case
     skin_type_input = input("What skin type do you want to use? ").lower()
 
+    # compare the user input to available skin types in lower case
     if skin_type_input not in [t.lower() for t in skin_types(animals)]:
         print("Skin type not found. Try again...")
         return
 
+    # output html file with appropriate animals data
     output_animal_html_file(
         "animals_template.html",
         "animals.html",
         {
+            # although not really necessary, indicate in the HTML that animals are filtered by skin type
             "__REPLACE_SUBTITLE_FILTERED_BY_SKIN_TYPE__":
                 f"<h2>Animals filtered by skin type: {skin_type_input}</h2>",
             "__REPLACE_ANIMALS_INFO__":
                 animals_by_skin_type_serialized(animals, skin_type_input)
         }
     )
-
 
 
 if __name__ == "__main__":
