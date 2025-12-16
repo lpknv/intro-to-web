@@ -82,20 +82,26 @@ def output_animal_html_file(file_template, output_path, data_to_replace):
 def main():
     show_skin_types()
 
-    skin_type = input(f"What skin type do you want to use? ")
-    if skin_type not in skin_types():
+    skin_type = input("What skin type do you want to use? ").lower()
+
+    available_skin_types = []
+    for t in skin_types():
+        available_skin_types.append(t.lower())
+
+    if skin_type not in available_skin_types:
         print("Skin type not found. Try again...")
-    else:
-        output_animal_html_file(
-            "animals_template.html",
-            "animals.html",
-            {
-                "__REPLACE_SUBTITLE_FILTERED_BY_SKIN_TYPE__": f"<h2>Animals filtered by skin type: {skin_type}</h2>",
-                "__REPLACE_ANIMALS_INFO__": animals_by_skin_type_serialized(
-                    skin_type
-                )
-            }
-        )
+        return
+
+    output_animal_html_file(
+        "animals_template.html",
+        f"animals_filtered_by_skin_type_{skin_type}.html",
+        {
+            "__REPLACE_SUBTITLE_FILTERED_BY_SKIN_TYPE__": f"<h2>Animals filtered by skin type: {skin_type}</h2>",
+            "__REPLACE_ANIMALS_INFO__": animals_by_skin_type_serialized(
+                skin_type
+            )
+        }
+    )
 
 
 if __name__ == "__main__":
