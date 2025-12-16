@@ -33,6 +33,13 @@ def animals_by_skin_type_serialized(_animals, skin_type):
     return result
 
 
+def add_card_text_item(title, characteristics, key):
+    value = characteristics.get(key)
+    if value:
+        return f"<li><strong>{title}:</strong> {value}</li>"
+    return ""
+
+
 def serialize_animal(animal):
     characteristics = animal["characteristics"]
 
@@ -41,11 +48,11 @@ def serialize_animal(animal):
             <div class="card__title">{animal['name']}</div>
             <div class="card__text">
                 <ul>
-                    <li><strong>Diet:</strong> {characteristics['diet']}</li>
-                    <li><strong>Skin Type:</strong> {characteristics['skin_type']}</li>
-                    <li><strong>Location:</strong> {", ".join(animal['locations'])}</li>
-                    <li><strong>Lifespan:</strong> {characteristics['lifespan']}</li>
-                    {f"<li><strong>Type:</strong> {characteristics['type']}</li>" if characteristics.get("type") else ""}
+                    {add_card_text_item("Diet", characteristics, "diet")}
+                    {add_card_text_item("Skin Type", characteristics, "skin_type")}
+                    {add_card_text_item("Location", {"locations": animal.get("locations", [])}, "locations")}
+                    {add_card_text_item("Lifespan", characteristics, "lifespan")}
+                    {add_card_text_item("Type", characteristics, "type")}
                 </ul>
             </div>
         </li>
