@@ -76,7 +76,7 @@
       <updated>1765533101072</updated>
       <workItem from="1765533102092" duration="334000" />
       <workItem from="1765551752420" duration="4369000" />
-      <workItem from="1765878151733" duration="9265000" />
+      <workItem from="1765878151733" duration="9663000" />
     </task>
     <task id="LOCAL-00001" summary="Daten aus JSON-Datei auslesen">
       <option name="closed" value="true" />
@@ -126,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765896424722</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Bonus - Filter">
+      <option name="closed" value="true" />
+      <created>1765896794201</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765896794201</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +149,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Bonus - Filter" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Intro_To_Web$animals_web_generator.coverage" NAME="animals_web_generator Coverage Results" MODIFIED="1765896685340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zootopia" />
+    <SUITE FILE_PATH="coverage/Intro_To_Web$animals_web_generator.coverage" NAME="animals_web_generator Coverage Results" MODIFIED="1765897054101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zootopia" />
   </component>
 </project>

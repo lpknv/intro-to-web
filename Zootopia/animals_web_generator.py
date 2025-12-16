@@ -30,7 +30,7 @@ def animals_by_skin_type_serialized(skin_type):
     result = ""
 
     for animal in get_animals_data():
-        if animal["characteristics"].get("skin_type") == skin_type:
+        if animal["characteristics"].get("skin_type").lower() == skin_type.lower():
             result += serialize_animal(animal)
 
     return result
@@ -82,23 +82,23 @@ def output_animal_html_file(file_template, output_path, data_to_replace):
 def main():
     show_skin_types()
 
-    skin_type = input("What skin type do you want to use? ").lower()
+    skin_type_input = input("What skin type do you want to use? ")
 
     available_skin_types = []
     for t in skin_types():
         available_skin_types.append(t.lower())
 
-    if skin_type not in available_skin_types:
+    if skin_type_input.lower() not in available_skin_types:
         print("Skin type not found. Try again...")
         return
 
     output_animal_html_file(
         "animals_template.html",
-        f"animals_filtered_by_skin_type_{skin_type}.html",
+        f"animals_filtered_by_skin_type_{skin_type_input.lower()}.html",
         {
-            "__REPLACE_SUBTITLE_FILTERED_BY_SKIN_TYPE__": f"<h2>Animals filtered by skin type: {skin_type}</h2>",
+            "__REPLACE_SUBTITLE_FILTERED_BY_SKIN_TYPE__": f"<h2>Animals filtered by skin type: {skin_type_input}</h2>",
             "__REPLACE_ANIMALS_INFO__": animals_by_skin_type_serialized(
-                skin_type
+                skin_type_input
             )
         }
     )
