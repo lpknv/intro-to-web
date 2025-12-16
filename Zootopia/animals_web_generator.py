@@ -18,7 +18,7 @@ def skin_types(_animals):
 
 
 def show_skin_types(_animals):
-    for i, skin_type in enumerate(_animals, start=1):
+    for i, skin_type in enumerate(skin_types(_animals), start=1):
         print(f"{i}. {skin_type}")
 
 
