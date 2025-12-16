@@ -71,10 +71,10 @@ def main():
     show_skin_types(animals)
 
     # read the skin type from user input and transform it to lower case
-    skin_type_input = input("What skin type do you want to use? ").lower()
+    skin_type_input = input("What skin type do you want to use? ")
 
     # compare the user input to available skin types in lower case
-    if skin_type_input not in [t.lower() for t in skin_types(animals)]:
+    if skin_type_input.lower() not in [t.lower() for t in skin_types(animals)]:
         print("Skin type not found. Try again...")
         return
 
