@@ -50,7 +50,7 @@ def serialize_animal(animal):
             <div class="card__title">{animal['name']}</div>
             <div class="card__text">
                 <ul>
-                     {add_card_text_item("Diet", characteristics, "diet")}
+                    {add_card_text_item("Diet", characteristics, "diet")}
                     {add_card_text_item("Skin Type", characteristics, "skin_type")}
                     {add_card_text_item("Location", animal, "locations")}
                     {add_card_text_item("Lifespan", characteristics, "lifespan")}
