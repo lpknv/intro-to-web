@@ -94,7 +94,7 @@ def main():
 
     output_animal_html_file(
         "animals_template.html",
-        f"animals_filtered_by_skin_type_{skin_type_input.lower()}.html",
+        "animals.html",
         {
             "__REPLACE_SUBTITLE_FILTERED_BY_SKIN_TYPE__": f"<h2>Animals filtered by skin type: {skin_type_input}</h2>",
             "__REPLACE_ANIMALS_INFO__": animals_by_skin_type_serialized(
