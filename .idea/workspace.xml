@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9491d393-6f28-472c-b659-911304cd7b63" name="Changes" comment="(optimize code) Bonus - Filter">
-      <change beforePath="$PROJECT_DIR$/Zootopia/animals_web_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zootopia/animals_web_generator.py" afterDir="false" />
-    </list>
+    <list default="true" id="9491d393-6f28-472c-b659-911304cd7b63" name="Changes" comment="(optimize code) Bonus - Filter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +179,31 @@
       <option name="project" value="LOCAL" />
       <updated>1765899619685</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="(optimize code) Bonus - Filter">
+      <option name="closed" value="true" />
+      <created>1765899987895</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765899987895</updated>
+    </task>
+    <task id="LOCAL-00014" summary="(optimize code) Bonus - Filter">
+      <option name="closed" value="true" />
+      <created>1765900135056</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765900135056</updated>
+    </task>
+    <task id="LOCAL-00015" summary="(optimize code) Bonus - Filter">
+      <option name="closed" value="true" />
+      <created>1765900184536</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1765900184536</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +219,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="(optimize code) Bonus - Filter" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Intro_To_Web$animals_web_generator.coverage" NAME="animals_web_generator Coverage Results" MODIFIED="1765899770443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zootopia" />
+    <SUITE FILE_PATH="coverage/Intro_To_Web$animals_web_generator.coverage" NAME="animals_web_generator Coverage Results" MODIFIED="1765900253313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zootopia" />
   </component>
 </project>

@@ -38,7 +38,7 @@ def add_card_text_item(title, characteristics, key):
     if not value:
         return ""
     if isinstance(value, list):
-        value = ", ".join(value)
+        value = value[0]
     return f"<li><strong>{title}:</strong> {value}</li>"
 
 
