@@ -7,11 +7,11 @@ def get_animals_data():
         return json.load(file)
 
 
-def skin_types(_animals):
+def skin_types(animals):
     """Store skin types in new list from original animals list"""
     types = []
 
-    for animal in _animals:
+    for animal in animals:
         skin_type = animal.get("characteristics", {}).get("skin_type")
         if skin_type and skin_type not in types:
             types.append(skin_type)
@@ -19,17 +19,17 @@ def skin_types(_animals):
     return types
 
 
-def show_skin_types(_animals):
+def show_skin_types(animals):
     """Print available skin types"""
-    for i, skin_type in enumerate(skin_types(_animals), start=1):
+    for i, skin_type in enumerate(skin_types(animals), start=1):
         print(f"{i}. {skin_type}")
 
 
-def animals_by_skin_type_serialized(_animals, skin_type):
+def animals_by_skin_type_serialized(animals, skin_type):
     """Filter animals by skin type and serialize them into an HTML string"""
     result = ""
 
-    for animal in _animals:
+    for animal in animals:
         animal_skin = animal.get("characteristics", {}).get("skin_type")
         if animal_skin and animal_skin.lower() == skin_type.lower():
             result += serialize_animal(animal)
