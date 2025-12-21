@@ -9,14 +9,11 @@ def get_animals_data():
 
 def skin_types(animals):
     """Store skin types in new list from original animals list"""
-    types = []
+    types = {animal.get("characteristics", {}).get("skin_type")
+             for animal in animals
+             if animal.get("characteristics", {}).get("skin_type")}
 
-    for animal in animals:
-        skin_type = animal.get("characteristics", {}).get("skin_type")
-        if skin_type and skin_type not in types:
-            types.append(skin_type)
-
-    return types
+    return sorted(types)
 
 
 def show_skin_types(animals):
@@ -27,14 +24,9 @@ def show_skin_types(animals):
 
 def animals_by_skin_type_serialized(animals, skin_type):
     """Filter animals by skin type and serialize them into an HTML string"""
-    result = ""
-
-    for animal in animals:
-        animal_skin = animal.get("characteristics", {}).get("skin_type")
-        if animal_skin and animal_skin.lower() == skin_type.lower():
-            result += serialize_animal(animal)
-
-    return result
+    matching = [serialize_animal(animal) for animal in animals
+                if animal.get("characteristics", {}).get("skin_type", "").lower() == skin_type.lower()]
+    return "".join(matching)
 
 
 def add_card_text_item(title, characteristics, key):
